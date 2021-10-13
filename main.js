@@ -5,10 +5,9 @@ const ytdl = require('ytdl-core');
 const { generateDependencyReport, joinVoiceChannel, getVoiceConnection, createAudioPlayer, createAudioResource, VoiceConnection, VoiceConnectionStatus } = require('@discordjs/voice');
 console.log(generateDependencyReport());
 
-var { token } = require('./config.json');
 const chalk = require('chalk');
 
-if (token == "") token = process.env.TOKEN;
+const token = process.env.TOKEN;
 
 const client = new Client({ intents: ['GUILD_VOICE_STATES', 'GUILD_MESSAGES', 'GUILDS'] });
 
