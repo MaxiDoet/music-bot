@@ -17,6 +17,10 @@
   "scripts": {
     "start": "node main.js"
   },
+  "engines": {
+    "node": "16.x",
+    "npm": "8.x"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC"
